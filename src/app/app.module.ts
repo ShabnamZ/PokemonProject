@@ -8,6 +8,9 @@ import { FooterComponent } from './footer/footer.component';
 import { ProductPageComponent } from './product-page/product-page.component';
 import { PokemonDetailComponent } from './pokemon-detail/pokemon-detail.component';
 import { PokemonIndexComponent } from './pokemon-index/pokemon-index.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +19,9 @@ import { PokemonIndexComponent } from './pokemon-index/pokemon-index.component';
     FooterComponent,
     ProductPageComponent,
     PokemonDetailComponent,
-    PokemonIndexComponent
+    PokemonIndexComponent,
+    HomeComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
