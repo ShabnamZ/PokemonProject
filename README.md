@@ -1,9 +1,4 @@
 
-hgfjj
-MASON WAZ HERE
-
-Amanda Knight Test!
-
 # AngularPokemon
 Hello World
 
