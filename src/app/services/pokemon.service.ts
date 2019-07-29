@@ -1,4 +1,3 @@
-
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Pokemon } from '../model/pokemon';
@@ -17,7 +16,7 @@ constructor(private _http: HttpClient) { }
   getPokemon(id: string) {
     return this._http.get(`${Api_Url}/Pokemon/${id}`);
   }
-  }
+
 
   
 
