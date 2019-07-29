@@ -1,0 +1,16 @@
+.mat-table {
+    overflow: auto;
+    max-height: 500px;
+  }
+  
+  .material-icons.orange {
+    color: #FB8C00;
+  }
+  
+  .material-icons.red {
+    color: rgb(251, 21, 0);
+  }
+  
+  .matColumnSize {
+    max-width: 50px;
+  }
