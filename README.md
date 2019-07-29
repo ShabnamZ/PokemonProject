@@ -1,4 +1,4 @@
-Amanda Knight Test!
+
 # AngularPokemon
 Hello World
 

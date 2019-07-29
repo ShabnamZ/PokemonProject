@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { AuthService } from './auth-service';
@@ -18,7 +19,33 @@ export class PokemonService {
   }
 
   }
+=======
+
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Pokemon } from '../model/pokemon';
+import { Observable } from 'rxjs';
+
+const Api_Url = 'hhtp://pokeapi.co/doc/v2.html/#pokemon';
+
+@Injectable({
+  providedIn: 'root'
+})
+  constructor(private _http: HttpClient) { }
+
+  getPokemons(): Observable<Pokemon[]>{
+    return this._http.get<Pokemon[]>(`${Api_Url}/Pokemon`);
+  }
+
+  getPokemon(id: string) {
+    return this._http.get(`${Api_Url}/Pokemon/${id}`);
+  }
+
+
+}
+>>>>>>> 40783fb3e069c1afe4f991ee3092455ba8b48534
   
 
   
-// }
+
+
