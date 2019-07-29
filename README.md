@@ -1,9 +1,15 @@
+<<<<<<< HEAD
+hgfjj
+MASON WAZ HERE
+Amanda Knight Test!
+=======
 
 hgfjj
 MASON WAZ HERE
 
 Amanda Knight Test!
 
+>>>>>>> 87956f773d4e8f45ae5fab0b01352f4203e47e64
 # AngularPokemon
 Hello World
 
