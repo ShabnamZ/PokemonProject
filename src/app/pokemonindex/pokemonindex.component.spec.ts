@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PokemonIndexComponent } from './pokemon-index.component';
+import { PokemonIndexComponent } from './pokemonindex.component';
 
 describe('PokemonIndexComponent', () => {
   let component: PokemonIndexComponent;
