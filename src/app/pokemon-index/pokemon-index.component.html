@@ -1,26 +1,24 @@
 <div>
-    <mat-table #table [dataSource]="dataSource">
-      <mat-header-row *matHeaderRowDef="columnNames"></mat-header-row>
-      <mat-row *matRowDef="let row; columns: columnNames;"></mat-row>
+  <mat-table #table [dataSource]="dataSource">
+    <mat-header-row *matHeaderRowDef="columnNames"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: columnNames;"></mat-row>
+
+    <ng-container matColumnDef="id">
+      <mat-header-cell *matHeaderCellDef class="matColumnSize"></mat-header-cell>
+      <mat-cell *matCellDef="let pokemon"> {{pokemon.id}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+      <mat-cell *matCellDef="let pokemon"> {{pokemon.name}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="height">
+      <mat-header-cell *matHeaderCellDef> Height </mat-header-cell>
+      <mat-cell *matCellDef="let pokemon"> {{pokemon.height}} </mat-cell>
+    </ng-container>  
   
-      <ng-container matColumnDef="details">
-        <mat-header-cell *matHeaderCellDef class="matColumnSize"></mat-header-cell>
-        <mat-cell *matCellDef="let note" class="matColumnSize"> 
-            <i class="material-icons" routerLink="/notes/detail/{{note.NoteId}}">library_books</i>
-        </mat-cell>
-      </ng-container>
-  
-      <ng-container matColumnDef="NoteId">
-        <mat-header-cell *matHeaderCellDef> Note # </mat-header-cell>
-        <mat-cell *matCellDef="let note"> {{note.NoteId}} </mat-cell>
-      </ng-container>
-  
-      <ng-container matColumnDef="Title">
-        <mat-header-cell *matHeaderCellDef> Title </mat-header-cell>
-        <mat-cell *matCellDef="let note"> {{note.Title}} </mat-cell>
-      </ng-container>  
-    
-  
-  
-    </mat-table>
-  </div>
+
+
+  </mat-table>
+</div>
