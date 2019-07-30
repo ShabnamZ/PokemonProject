@@ -8,8 +8,9 @@ import { Pokemon } from '../model/pokemon';
   styleUrls: ['./pokemonindex.component.css']
 })
 export class PokemonIndexComponent implements OnInit {
+  
 
-  pokemons: Pokemon[] = [];
+  pokemons: any = [];
   // columnNames = ['ID', 'Name', 'Height'];  
 
   constructor(private _pokemonService: PokemonService) { }
@@ -21,6 +22,7 @@ export class PokemonIndexComponent implements OnInit {
     this._pokemonService.getPokemons().subscribe((poke => {
       console.log(poke);
       this.pokemons = poke.results;
+      console.log(this.pokemons);
     }));
     console.log(this.pokemons);
   }
