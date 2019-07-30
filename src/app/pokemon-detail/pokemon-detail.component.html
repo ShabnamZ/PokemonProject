@@ -1,0 +1,12 @@
+<div *ngIf="pokemon">
+
+    <h2>{{pokemon.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{pokemon.id}}</div>
+    <div>
+      <label>name:
+        <p>{{ pokemon.name }}</p>
+        <p>{{ pokemon.height }}</p>
+      </label>
+    </div>
+  
+  </div>
