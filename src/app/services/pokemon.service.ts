@@ -16,7 +16,7 @@ constructor(private _http: HttpClient) { }
   getPokemon(id: string) {
     return this._http.get(`${Api_Url}/Pokemon/${id}`);
   }
-
+  }
 
   
 

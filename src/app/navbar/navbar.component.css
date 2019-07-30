@@ -7,24 +7,24 @@ img {
 
 .navbar{
     padding: 0 25px 0 25px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid;
+    box-shadow: 5px 10px #888888;
 }
 
+
 .navbar-light .navbar-nav .nav-link {
-    color: #2f57a1;
+    color: #76a1b4;
     font-size: 20px;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
     color: #ffffff;
-    background-color: #2f57a1;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color:#5aa0e0;
 }
 
 span:hover {
     color: #ffffff;
-    background-color: #2f57a1;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #5aa0e0;
 }
 
 span.navbar {
