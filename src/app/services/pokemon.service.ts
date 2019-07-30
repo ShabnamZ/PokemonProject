@@ -6,6 +6,7 @@ const Api_Url = 'https://pokeapi.co/api/v2/';
 
 @Injectable()
   export class PokemonService {
+    detailId: string = "";
 constructor(private _http: HttpClient) { }
 
   getPokemons(): any{

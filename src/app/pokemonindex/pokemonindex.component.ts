@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PokemonService } from '../services/pokemon.service';
 import { Pokemon } from '../model/pokemon';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pokemonindex',
@@ -13,7 +14,7 @@ export class PokemonIndexComponent implements OnInit {
   pokemons: any = [];
   // columnNames = ['ID', 'Name', 'Height'];  
 
-  constructor(private _pokemonService: PokemonService) { }
+  constructor(private _pokemonService: PokemonService, private router: Router) { }
 
   ngOnInit() {
     this.getPokemon(); 
@@ -27,4 +28,8 @@ export class PokemonIndexComponent implements OnInit {
     console.log(this.pokemons);
   }
 
+  details(url: string) {
+    this._pokemonService.detailId = url;
+    this.router.navigate(['/detail']);
+  }
 }
