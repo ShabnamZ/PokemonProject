@@ -1,4 +1,8 @@
-<div *ngFor="let pokemon of pokemons">
+<div class="pika" style="text-align: center;"
+><img src="https://media2.giphy.com/media/13G7hmmFr9yuxG/source.gif"></div>
+
+
+<div *ngFor="let pokemon of pokemons" style="border: solid blue; margin:5px; text-align:center;">
   
   <p> {{pokemon.id}} </p>
 
@@ -6,7 +10,7 @@
 
   <p> {{pokemon.height}} </p>
   
-
+<button (click)="details(pokemon.name)" class="btn btn-info"> Details </button>
 
   
 </div>
